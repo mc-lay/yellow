@@ -27,7 +27,7 @@ class MainApp(QMainWindow, Ui_MainWindow):
         self.repaint()
 
     def draw_flag(self, qp):
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(random.randint(1, 255), random.randint(1, 255), random.randint(1, 255)))
         x = random.randint(30, 150)
         y = random.randint(30, 150)
         for i in range(random.randint(1, 7)):
